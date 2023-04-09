@@ -14,6 +14,13 @@ module.exports = {
           darker: '#004182',
         },
       },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(0deg)' },
+          '25%, 75%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        }
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],
