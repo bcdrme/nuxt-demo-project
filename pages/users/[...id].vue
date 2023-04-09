@@ -4,7 +4,7 @@ const { data } = await useFetch(`https://jsonplaceholder.typicode.com/users/${ro
 </script>
 
 <template>
-  <div class="relative py-16 bg-gradient-to-br from-sky-50 to-gray-200 h-screen">
+  <div class="relative h-screen bg-gradient-to-br from-sky-50 to-gray-200 py-16">
     <h1>User page</h1>
     <p>{{ data.name }}</p>
   </div>
