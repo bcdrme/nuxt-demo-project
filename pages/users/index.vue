@@ -9,7 +9,8 @@ const { data } = await useFetch('https://jsonplaceholder.typicode.com/users')
       <ul>
         <li
           v-for="user in data"
-          :key="user.id">
+          :key="user.id"
+          class="hover:text-cyan-900">
           <NuxtLink :to="`/users/${user.id}`">
             {{ user.name }}
           </NuxtLink>

@@ -2,6 +2,6 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/eslint-module'],
   build: {
-    transpile: ['trpc-nuxt']
-  }
+    transpile: ['trpc-nuxt'],
+  },
 })
