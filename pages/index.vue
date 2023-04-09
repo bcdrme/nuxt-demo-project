@@ -16,15 +16,22 @@
                   () => {
                     $router.push('/users')
                   }
-                "
-                >Users</NavButton
-              >
+                ">
+                Users
+              </NavButton>
+              <NavButton
+                @click="
+                  () => {
+                    $router.push('/counter')
+                  }
+                ">
+                Counter
+              </NavButton>
             </div>
             <div class="mt-32 space-y-4 text-gray-600 text-center sm:-mb-8">
+              <!-- prettier-ignore -->
               <p class="text-xs">
-                By proceeding, you agree to our
-                <a href="" class="underline">Disclaimer</a> and confirm you have read our
-                <a href="" class="underline">Privacy and Cookie Statement</a>.
+                By proceeding, you agree to our <a href="" class="underline">Disclaimer</a> and confirm you have read our <a href="" class="underline">Privacy and Cookie Statement</a>.
               </p>
             </div>
           </div>
