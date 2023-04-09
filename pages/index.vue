@@ -16,5 +16,13 @@
       ">
       Counter
     </NavButton>
+    <NavButton
+      @click="
+        () => {
+          $router.push('/trpc')
+        }
+      ">
+      tRPC
+    </NavButton>
   </NavMenu>
 </template>
