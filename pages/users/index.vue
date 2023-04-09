@@ -3,16 +3,26 @@ const { data } = await useFetch('https://jsonplaceholder.typicode.com/users')
 </script>
 
 <template>
-  <div class="relative h-screen bg-gradient-to-br from-sky-50 to-gray-200 py-16">
-    <h1>Users</h1>
-    <ul>
-      <li
-        v-for="user in data"
-        :key="user.id">
-        <NuxtLink :to="`/users/${user.id}`">
-          {{ user.name }}
-        </NuxtLink>
-      </li>
-    </ul>
+  <div class="grid gap-10">
+    <div class="rounded-xl bg-white p-12 shadow-xl">
+      <h2 class="mb-8 text-2xl font-bold text-cyan-900">Users</h2>
+      <ul>
+        <li
+          v-for="user in data"
+          :key="user.id">
+          <NuxtLink :to="`/users/${user.id}`">
+            {{ user.name }}
+          </NuxtLink>
+        </li>
+      </ul>
+    </div>
+    <NavButton
+      @click="
+        () => {
+          $router.push('/')
+        }
+      ">
+      Back
+    </NavButton>
   </div>
 </template>
