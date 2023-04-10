@@ -24,5 +24,13 @@
       ">
       tRPC
     </DefaultButton>
+    <DefaultButton
+      @click="
+        () => {
+          $router.push('/serverComponent')
+        }
+      ">
+      Server Component
+    </DefaultButton>
   </MainMenu>
 </template>
