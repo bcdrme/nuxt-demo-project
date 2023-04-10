@@ -9,13 +9,13 @@ const { data } = await useFetch(`https://jsonplaceholder.typicode.com/users/${ro
       <h2 class="mb-8 text-2xl font-bold text-cyan-900">{{ data.name }}</h2>
       <p>{{ data }}</p>
     </div>
-    <NavButton
+    <DefaultButton
       @click="
         () => {
           $router.push('/users')
         }
       ">
       Back
-    </NavButton>
+    </DefaultButton>
   </div>
 </template>

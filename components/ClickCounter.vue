@@ -22,7 +22,7 @@ const wiggle = () => {
 </script>
 
 <template>
-  <h2 class="mb-8 text-2xl font-bold text-cyan-900">Counter</h2>
+  
   <div class="grid place-items-center gap-8">
     <div
       class="border-1 relative flex h-36 w-36 items-center justify-center rounded-full bg-white p-5 text-center text-4xl text-cyan-900 shadow-xl"
@@ -31,8 +31,8 @@ const wiggle = () => {
       {{ count }}
     </div>
     <div class="grid grid-flow-col gap-4">
-      <NavButton @click="decrement">-</NavButton>
-      <NavButton @click="increment">+</NavButton>
+      <DefaultButton @click="decrement">-</DefaultButton>
+      <DefaultButton @click="increment">+</DefaultButton>
     </div>
   </div>
 </template>

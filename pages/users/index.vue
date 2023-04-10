@@ -17,13 +17,13 @@ const { data } = await useFetch('https://jsonplaceholder.typicode.com/users')
         </li>
       </ul>
     </div>
-    <NavButton
+    <DefaultButton
       @click="
         () => {
           $router.push('/')
         }
       ">
       Back
-    </NavButton>
+    </DefaultButton>
   </div>
 </template>

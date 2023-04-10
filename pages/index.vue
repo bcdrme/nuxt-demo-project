@@ -1,28 +1,28 @@
 <template>
-  <NavMenu>
-    <NavButton
+  <MainMenu>
+    <DefaultButton
       @click="
         () => {
           $router.push('/users')
         }
       ">
       Users
-    </NavButton>
-    <NavButton
+    </DefaultButton>
+    <DefaultButton
       @click="
         () => {
           $router.push('/counter')
         }
       ">
       Counter
-    </NavButton>
-    <NavButton
+    </DefaultButton>
+    <DefaultButton
       @click="
         () => {
           $router.push('/trpc')
         }
       ">
       tRPC
-    </NavButton>
-  </NavMenu>
+    </DefaultButton>
+  </MainMenu>
 </template>
