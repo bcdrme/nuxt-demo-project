@@ -1,3 +1,3 @@
 <template>
-  <ClickCounter />
+  <PersonList />
 </template>
